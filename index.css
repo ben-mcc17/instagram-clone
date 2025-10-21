@@ -3,3 +3,33 @@ html, body {
     padding: 0;
 }
 
+.main-container {
+    max-width: 935px;
+    margin: 0 auto;
+}
+    
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Lobster", "sans-serif";
+    font-weight: 400;
+}
+
+.main-logo {
+    width: 150px;
+    height: 100px;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
