@@ -19,6 +19,10 @@ h1 {
     font-weight: 400;
 }
 
+.login-signup {
+    font-family: "Source Sans 3", "sans-serif";
+}
+
 .main-logo {
     width: 150px;
     height: 100px;
@@ -26,11 +30,17 @@ h1 {
 
 .user-avatar,
 .poster-pic {
-    border: 2px solid rgba(0, 0, 0, 0.1);;
+    width: 70px;
+    height: 70px; /* make square so border-radius creates a true circle */
     border-radius: 50%;
-    width: 75px;
-    height: 65px;
-    background-color: rgb(146, 146, 255);
+    object-fit: cover; /*crop to fill without distortion*/
+    background-color: rgba(82, 113, 248, 0.08); /* optional */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* optional polish */
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-bottom: 16px;
 }
 
 .profile-header {
@@ -56,4 +66,52 @@ h1 {
 
 .post-location {
     font-weight: 400;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 16px;
+    border-radius: 8px; /* optional */
+    object-fit: contain;
+}
+
+.icon-img {
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon-img:hover,
+.icon-img:active {
+    transform: scale(1.25);
+}
+
+.likes-count,
+.caption {
+    font-family: "Source Sans 3", "sans-serif";
+    margin-left: 10px;
+    font-size: 1.25rem;
+}
+
+.likes-count {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    
+}
+
+.caption-username,
+.likes-count {
+    font-weight: 650;
 }

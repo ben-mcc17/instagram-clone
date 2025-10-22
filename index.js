@@ -1,30 +1,55 @@
 const posts = [
     {
-        name: "Vincent van Gogh",
-        username: "vincey1853",
-        location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        comment: "just took a few mushrooms lol",
-        likes: 21
+        username: "george-springer4",
+        location: "Toronto, Ontario",
+        avatar: "imgs/springer.webp",
+        post: "imgs/Home Run GIF by MLB.gif",
+        caption: "WOOOOOOOOO",
+        likes: "2,457,315"
     },
     {
-        name: "Gustave Courbet",
-        username: "gus1819",
-        location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
-        comment: "i'm feelin a bit stressed tbh",
-        likes: 4
+        username: "VladdyJr27",
+        location: "Toronto, Ontario",
+        avatar: "imgs/vladdy.webp",
+        post: "imgs/Home Run Baseball GIF by MLB.gif",
+        caption: "That feeling when you going to the world series",
+        likes: "3,547,234"
     },
-        {
-        name: "Joseph Ducreux",
-        username: "jd1735",
-        location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
-        comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
-        likes: 152
+    {
+        username: "Mad_Max31",
+        location: "Seattle, Washington",
+        avatar: "imgs/max-pfp.webp",
+        post: "imgs/max-yelling.gif",
+        caption: "I was not getting off that mound",
+        likes: "2,374,239"
     }
 ]
 
+const postsSection = document.getElementById("posts-section")
+
+
+function renderPosts() {
+    for (let i=0; i < posts.length; i++) {
+
+        postsSection.innerHTML += `
+        <div class="profile-header">
+            <img class="poster-pic" src="${posts[i].avatar}">
+            <div class="poster-info-container">
+                <p class="poster-username">${posts[i].username}</p>
+                <p class="post-location">${posts[i].location}</p>
+            </div>
+        </div>
+
+        <img src="${posts[i].post}" class="post-img"">
+        <img src="imgs/icon-heart.png" class="icon-img">
+        <img src="imgs/icon-comment.png" class="icon-img">
+        <img src="imgs/icon-dm.png" class="icon-img">
+        <p class="likes-count">${posts[i].likes} likes</p>
+        <p class="caption"><span class="caption-username">${posts[i].username}</span> ${posts[i].caption}</p>
+        
+        `
+
+    }
+}
+
+renderPosts()
