@@ -66,3 +66,19 @@ h1 {
     border-radius: 8px; /* optional */
     object-fit: contain;
 }
+
+.icon-img {
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.caption {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Source Sans 3", "sans-serif";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
