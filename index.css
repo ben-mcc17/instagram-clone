@@ -4,13 +4,10 @@ html, body {
 }
 
 .main-container {
-    max-width: 935px;
+    max-width: 850px;
     margin: 0 auto;
 }
     
-
-
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -27,9 +24,36 @@ h1 {
     height: 100px;
 }
 
-.user-avatar {
+.user-avatar,
+.poster-pic {
+    border: 2px solid rgba(0, 0, 0, 0.1);;
     border-radius: 50%;
     width: 75px;
-    height: 75px;
+    height: 65px;
+    background-color: rgb(146, 146, 255);
 }
 
+.profile-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.poster-info-container {
+    margin-left: 8px;
+}
+
+.poster-username,
+.post-location {
+    font-family: "Source Sans 3", "sans-serif";
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.poster-username {
+    margin-top: 10px;
+    font-weight: 650;
+}
+
+.post-location {
+    font-weight: 400;
+}
