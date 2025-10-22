@@ -26,10 +26,17 @@ h1 {
 
 .user-avatar,
 .poster-pic {
+    width: 70px;
+    height: 70px; /* make square so border-radius creates a true circle */
     border-radius: 50%;
-    width: 75px;
-    height: 65px;
-    background-color: rgba(82, 113, 248, 0.253);
+    object-fit: cover; /*crop to fill without distortion*/
+    background-color: rgba(82, 113, 248, 0.08); /* optional */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* optional polish */
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-bottom: 16px;
 }
 
 .profile-header {
@@ -62,7 +69,7 @@ h1 {
     height: auto;
     max-width: 100%;
     display: block;
-    margin-top: 12px;
+    margin-top: 16px;
     border-radius: 8px; /* optional */
     object-fit: contain;
 }
@@ -80,5 +87,9 @@ h1 {
     margin-left: 10px;
     font-family: "Source Sans 3", "sans-serif";
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.caption-username {
+    font-weight: 650;
 }
