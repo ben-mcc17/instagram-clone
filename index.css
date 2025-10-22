@@ -26,11 +26,10 @@ h1 {
 
 .user-avatar,
 .poster-pic {
-    border: 2px solid rgba(0, 0, 0, 0.1);;
     border-radius: 50%;
     width: 75px;
     height: 65px;
-    background-color: rgb(146, 146, 255);
+    background-color: rgba(82, 113, 248, 0.253);
 }
 
 .profile-header {
@@ -56,4 +55,14 @@ h1 {
 
 .post-location {
     font-weight: 400;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 12px;
+    border-radius: 8px; /* optional */
+    object-fit: contain;
 }
