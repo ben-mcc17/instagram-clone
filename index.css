@@ -82,14 +82,25 @@ hr {
     margin-right: 10px;
 }
 
+.likes-count,
 .caption {
-    margin-top: 10px;
-    margin-left: 10px;
     font-family: "Source Sans 3", "sans-serif";
-    font-weight: 400;
+    margin-left: 10px;
     font-size: 1.25rem;
 }
 
-.caption-username {
+.likes-count {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    margin-top: 0px;
+    font-weight: 400;
+    
+}
+
+.caption-username,
+.likes-count {
     font-weight: 650;
 }
